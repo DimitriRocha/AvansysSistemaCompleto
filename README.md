@@ -1,37 +1,24 @@
-## Regras Iniciais
-1) Antes de começar o desenvolvimento faça um FORK desse repositório.
-2) Após o FORK verifique se o repositório criado está público.
-3) Arquitetura de desenvolvimento:
-  - VUE.js;
-  - Laravel 7 USANDO padrão REST;
-  - Banco opcional;
+# Desafio avansys
 
-## Informações adicionais.
-1) No seu fork crie um readme.md contendo as seguintes informações.
-    - Qual arquitetura utilizada no seu projeto.
-    - Teve algum problema no momento do desenvolvimento que gostaria de nos dizer?
-    - Fez algo adicional que não estava previsto nesse documento e gostaria de nos dizer?
-  
-## Objetivos do desafio:  
-
+## Arquitetura do projeto
 ### Backend
-1)   Criar um serviço para buscar os dados da operadora
-2)   Criar um serviço para criar uma operadora
-3)   Criar um serviço para editar uma operadora
-4)   Criar um serviço para excluir a operadora
+O backend usa uma arquitetura de API com o model e o controller de uma arquitetura MVC padrão.
+As rotas usadas são em sua maioria restfull porém em casos específicos como deletar em massa a arquitetura restfull não é usada uma vez que a request precisaria ser executada múltiplas vezes no cliente.
 
 ### Frontend
-1)   Seguir o protótipo 
- - https://www.figma.com/file/kgmFNAmWJoRuUUoau9Evgg/Exerc%C3%ADcio-Front-End-Vue?node-id=8%3A625
+O frontend é escrito em vue e compilado pelo webpack.
 
-## Diferenciais.
-1) Usar o DOCKER
-2) Fazer teste automatizado usando PHPUNIT
-2) Fazer teste usando CYPRESS
+## Problemas no desenvolvimento
+Minha eletricidade caiu múltiplas vezes nos últimos dias me fazendo perder boa parte do projeto algumas vezes. Minha versão atual do windows é a home e essa não suporta o hyper-v logo não consigo configurar o docker na minha máquina. E por último, devido ao tempo o código do frontend ficou bem menos organizado do que eu costumo fazer. Para um exemplo de como costumo trabalhar no frontend olhar pasta abaixo:
 
-## O que será avaliado:
- - Arquitetura Adotada.
- - Clean Code.
- - Reaproveitamento de código
- - Solução do Problema proposto
- - Melhores práticas de desenvolvimento
+
+## Adicionais
+Fiz um banco de dados simples em mysql utilizando migrations, e no frontend utilizei um plugin do bootstrap para o vue.
+
+## Executar o projeto
+Para executar o projeto basta baixar os repositórios, instalar respectivamente os pacotes do composer e do npm e configurar o banco de dados.
+Lembrando que no banco de dados o tipo de operador deve ser populado, para isso eu já criei todas as rotas respectivas, basta acessar a documentação da API abaixo.
+
+## Documentação
+Para executar o projeto basta baixar os repositórios, instalar respectivamente os pacotes do composer e do npm e configurar o banco de dados.
+Lembrando que no banco de dados o tipo de operador deve ser populado.
